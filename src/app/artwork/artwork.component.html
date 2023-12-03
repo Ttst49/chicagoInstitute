@@ -1,0 +1,13 @@
+<div class="cards">
+  <div *ngFor="let artwork of artworks" >
+    <div class="card">
+      <img src="{{getImageForArtworkFromId(artwork.image_id)}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{artwork.title}}</h5>
+        <p class="card-text">{{artwork.artist_title}}</p>
+        <a [routerLink]="['artworks',artwork.id]" class="btn btn-secondary">Voir l'artwork</a>
+      </div>
+    </div>
+  </div>
+</div>
+

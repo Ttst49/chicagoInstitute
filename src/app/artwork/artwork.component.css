@@ -1,0 +1,17 @@
+.cards{
+  display: flex;
+  overflow-y: scroll;
+}
+.card{
+  width: 33vw;
+  margin: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
