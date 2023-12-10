@@ -45,12 +45,7 @@ export class ArtworkComponent {
   }
 
   getImageForArtworkFromId(id:string){
-    return "https://www.artic.edu/iiif/2/"+id+"/full/843,/0/default.jpg"
-  }
-
-
-  getArtworkById(id:number){
-    return this.artworks.find((artwork:Artwork)=>artwork.id == id)!
+    return this.ArtworkService.getImageForArtworkFromId(id)
   }
 
 
