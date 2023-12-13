@@ -1,11 +1,15 @@
-<div *ngIf="artwork">
-  {{artwork.id}}
-  {{artwork.title}}
-  {{artwork.artist_title}}
-  <img src="{{getImageForArtworkFromId(artwork.image_id)}}" alt="">
-</div>
+<div class="bodyDetail">
+  <a href="/artworks" class="btn btn-outline-success">Retour</a>
+  <div class="detail" *ngIf="artwork">
+    <p><i>{{artwork.title}}</i></p>
+    <p><i>{{artwork.artist_title}}</i></p>
+    <div class="frame">
+      <img src="{{getImageForArtworkFromId(artwork.image_id)}}" alt="">
+    </div>
+  </div>
 
 
-<div *ngIf="!artwork">
-  rien a montrer ici
+  <div *ngIf="!artwork">
+    rien a montrer ici
+  </div>
 </div>

@@ -1,0 +1,17 @@
+.frame {
+  width: fit-content;
+  background-size: cover;
+  border: #2e1a12 solid 15px;
+  -webkit-border-image: url('http://pancaketheorem.com/stuff/demos/borderimage/wood.png') 200 stretch;
+  -moz-border-image: url('http://pancaketheorem.com/stuff/demos/borderimage/wood.png') 200 stretch;
+  border-image: url('http://pancaketheorem.com/stuff/demos/borderimage/wood.png') 200 stretch;
+  -webkit-box-shadow: inset 0px 0px 10px #000000;
+}
+
+.detail{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
